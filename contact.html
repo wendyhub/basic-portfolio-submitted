@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+<html lang="en-us">
 
-<html>
     
     <head> 
         <meta charset="UTF-8">
@@ -8,49 +8,51 @@
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     </head>
 
-        <body>
-
-            <div id ="mainheader">
-                <header>
-                    <div id="boxed" style="display:inline-block;">
-                        <h1 id="yourname">Wendy</h1>
-                    </div>
+    <body>
+    
+        <header id="masthead">
+            <div class="container">
+                <a href="index.html" id="logo">Wendy</a>
+                <nav>
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+            
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>Contact</h1>
+            
+                <form id="contact-form">
+                    <ul>
+                        
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Smith" required="required">                    
+                        
+                        
+                            <label for="name">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example123@email.com" required="required">                    
+                        
+                        
+                            <label for="name">Message</label>
+                            <textarea id="message" name="message" required="required"></textarea>
+                        
+                    </ul>
+                    <input type="submit">
+                </form>
+            </section>
+        </div>
+    
         
-                    <div id="links"> 
-                        <a href="index.html">About</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </header>
+        <footer>
+            <div class="container">
+                Copyright &copy;
             </div>
-            
-           
-            <div class="contentcontainer">
-                <div id ="contentheader">
-                    <h1 style= "color:#4aaaa5"; class= "mainheader";>Contact</h1>
-                        <hr>
-                    <form>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..">
-            
-                        <label for="email">Last Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your email..">
-            
-                        <label for="message">Message</label>
-                        <input type="text" id="message" name="message" placeholder="">
-              
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-            
-            <footer class="site-footer">
-                <div id="footer-content">
-                    <p>Copyright ©</p>
-                </div>
-            </footer>
-
-        </body>
-
+        </footer>
+    </body>
+    
 </html>
+           
             

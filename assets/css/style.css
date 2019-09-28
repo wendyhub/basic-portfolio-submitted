@@ -1,190 +1,218 @@
-
 body {
-    line-height:150%;
-    background-color: #ffffff;
-    margin: 0;
-    background-image: url("../../assets/images/background.png");
-    background-repeat: repeat;
-}
-
-#mainheader {
-    min-height: 70px;
-    background: #ffffff;
-    border-bottom: 1pt solid #cccccc;
-}
-
-header {
-    margin: 0 auto;
-    width: 960px;
-} 
-
-.contentcontainer {
-    margin: 0 auto;
-    padding: 15px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-
-#boxed {
-    background-color: #4aaaa5;
-    width: 250px;
-    padding: 10px;
-}
-
-#yourname {
-    color: white;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#links {
-    margin-top: 35px;
-    float: right;
-}
-
-#links a:not(:last-child) {
-    border-right: 1pt solid#777777;
-    padding: 0 8px;
-}
-
-a {
-    text-decoration: none;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
     color: #777777;
-    text-align: center;
-    vertical-align: middle;
+    background: url("../images/background.png");
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: Georgia,"Times New Roman",Times,serif;
-    color: #777777
-}
-
-p, label {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #777777
-}
-
-#contentheader {
-    width: 960px;
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    margin: 0 auto;
-    padding: 20px;
+* {
     box-sizing: border-box;
 }
 
-.mainheader {
-    padding-bottom: 15px;
-    vertical-align: middle;
+/* general */
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
 }
 
-hr {
-   color:#dddddd;
+h1,
+h2,
+h3,
+p {
+    margin-bottom: 20px;
 }
 
-#bio-img {
-    height: 180px;
-    width: 200px;
-    padding-top: 12px;
-    padding-right: 20px;
-    image-orientation: from-image;
-    float: left;
+p:last-child {
+    margin-bottom: 0;
 }
 
-/*the "Copyright" text should be at the bottom of the footer..*/
-/*tried to make a sticky footer.. didn't work*/
-/*acknowledged that the footer stays right under the contentcontainer.. not sure how to move it*/
+h1,
+h2,
+h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color: #4aaaa5;
+}
+ 
+h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+}
 
+h2,
+h3 {
+    font-size: 22px;
+}
 
-.site-footer {
-    border-top:8px solid #4aaaa5;
+/* header */
+
+#masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+}
+  
+#logo {
+    float:left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman" serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+}
+
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+nav a { 
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+    border-left: 0 none;
+}
+
+/* footer */
+
+footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #ffffff;
+    color: #cccccc;
+    text-align: center;
     background: #666666;
+    border-top: 8px solid #4aaaa5;
     height: 50px;
 }
-  
-#footer-content {
-    background:#666666;
-    text-align: center;
-    vertical-align: bottom;
-    font-size: 15px;
 
+h3, h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eeeeee;
 }
 
+/* main */
 
-/*addition contact page css starts below:*/
+#main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+}
 
-input[type=text], select {
+.main-section {
+    float: left;
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
     border: 1px solid #dddddd;
-    border-radius: 0px;
-    box-sizing: border-box;
-}
-  
-input[type=submit] {
-    width: 100;
-    background-color: #4aaaa5;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-}
-  
-input[type=submit]:hover {
-    background-color: #4aaaa5bd;
 }
 
-/* Tried to make the message area larger, but couldn't adjust the text box to type properly at the top*/
-#message {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #dddddd;
-    border-radius: 0px;
-    box-sizing: border-box;
-    height: 200px;
+/* portfolio page */
+
+.work {
+    position: relative;
+    float: left;
+    width: 275px;
+    margin: 20px 0 25px;
     overflow: auto;
 }
-  
 
-/*CSS for portfolio page starts below*/
-
-.flowerpictures {
-    height: 100%;
-    width: 700px;
+.work:nth-child(even) {
+    margin-right: 40px;
 }
 
-.flower {
-    height: 200px;
-    width: 275px;
-    padding-top: 15px;
-    padding-right: 20px;
-    image-orientation: from-image;
-    display: inline-block;
+.work img {
+    width: 250px;
+    height: 250px;
+    border: 0 none;
+    opacity: 0.8;
 }
 
-/*had trouble adding the text overlay on top of the picture..and the text wouldn't change to white with this code either../
-this was the css code I tried pairing up with what I mentioned in the index.html file:
-
-.text-block {
+.work h3 {
     position: absolute;
-    background-color: #4aaaa5;
-    color: #cccccc; 
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
     text-align: center;
-    padding-bottom: 5px;
-    display: inline-block;
+    background: #4aaaa5;
+    border-bottom: 0;
 }
 
-*/
-    
- 
+.auth-img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+}
 
-  
-      
+/* contact page */
+
+#contact-form ul {
+    margin-bottom: 20px
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+}

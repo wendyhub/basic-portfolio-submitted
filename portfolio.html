@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+<html lang="en-us">
 
-<html>
     
     <head> 
         <meta charset="UTF-8">
@@ -9,50 +9,59 @@
     </head>
 
     <body>
-        
-        <div id ="mainheader">
-            <header>
-                <div id="boxed" style="display:inline-block;">
-                    <h1 id="yourname">Wendy</h1>
-                </div>
-
-                <div id="links"> 
+    
+        <header id="masthead">
+            <div class="container">
+                <a href="index.html" id="logo">Wendy</a>
+                <nav>
                     <a href="index.html">About</a>
                     <a href="portfolio.html">Portfolio</a>
                     <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>Portfolio</h1>
+                
+                <div class="work">
+                    <img src="assets/images/flower1.png" alt="Rose">
+                    <h3>Rose</h3>
                 </div>
-            </header>
+
+                <div class="work">
+                    <img src="assets/images/flower2.png" alt="Lily">
+                    <h3>Lily</h3>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/flower3.png" alt="Hibiscus">
+                    <h3>Hibiscus</h3>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/flower4.png" alt="Lavender">
+                    <h3>Lavender</h3>
+                </div>
+
+                <div class="work">
+                    <img src="assets/images/flower5.png" alt="Peony">
+                    <h3>Peony</h3>
+                </div>
+        
+            </section>
         </div>
         
-        
-        <div class="contentcontainer">
-            <div id ="contentheader">
-                <h1 style= "color:#4aaaa5"; class= "mainheader";>Portfolio</h1>
-                <hr>
-            
-                <div class="flowerpictures">
-                    <img class="flower" src="assets/images/flower1.png" alt="Rose">
-                      
-                <!--I tried to make the text overlay on the pictures but it didn't turn out well. This was the code I was trying to use:
-                    <div class="text-block">
-                            <h4>Rose</h4>
-                    </div>
-                -->
-                
-                    <img class="flower" src="assets/images/flower2.png" alt="Lily">
-                    <img class="flower" src="assets/images/flower3.png" alt="Hibiscus">
-                    <img class="flower" src="assets/images/flower4.png" alt="Lavender">
-                    <img class="flower" src="assets/images/flower5.png" alt="Peony">
-                </div>
-            </div>
-        </div> 
-        
-        <footer class="site-footer">
-            <div id="footer-content">
-                <p>Copyright ©</p>
-            </div>
+        <footer>
+            <div class="container">
+                Copyright &copy;
+         </div>
         </footer>
-
     </body>
-
+        
 </html>
+
+
+        
+      
