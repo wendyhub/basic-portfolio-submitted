@@ -1,0 +1,190 @@
+
+body {
+    line-height:150%;
+    background-color: #ffffff;
+    margin: 0;
+    background-image: url("../../assets/images/background.png");
+    background-repeat: repeat;
+}
+
+#mainheader {
+    min-height: 70px;
+    background: #ffffff;
+    border-bottom: 1pt solid #cccccc;
+}
+
+header {
+    margin: 0 auto;
+    width: 960px;
+} 
+
+.contentcontainer {
+    margin: 0 auto;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#boxed {
+    background-color: #4aaaa5;
+    width: 250px;
+    padding: 10px;
+}
+
+#yourname {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#links {
+    margin-top: 35px;
+    float: right;
+}
+
+#links a:not(:last-child) {
+    border-right: 1pt solid#777777;
+    padding: 0 8px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #777777;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    color: #777777
+}
+
+p, label {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #777777
+}
+
+#contentheader {
+    width: 960px;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.mainheader {
+    padding-bottom: 15px;
+    vertical-align: middle;
+}
+
+hr {
+   color:#dddddd;
+}
+
+#bio-img {
+    height: 180px;
+    width: 200px;
+    padding-top: 12px;
+    padding-right: 20px;
+    image-orientation: from-image;
+    float: left;
+}
+
+/*the "Copyright" text should be at the bottom of the footer..*/
+/*tried to make a sticky footer.. didn't work*/
+/*acknowledged that the footer stays right under the contentcontainer.. not sure how to move it*/
+
+
+.site-footer {
+    border-top:8px solid #4aaaa5;
+    background: #666666;
+    height: 50px;
+}
+  
+#footer-content {
+    background:#666666;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 15px;
+
+}
+
+
+/*addition contact page css starts below:*/
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #4aaaa5bd;
+}
+
+/* Tried to make the message area larger, but couldn't adjust the text box to type properly at the top*/
+#message {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 0px;
+    box-sizing: border-box;
+    height: 200px;
+    overflow: auto;
+}
+  
+
+/*CSS for portfolio page starts below*/
+
+.flowerpictures {
+    height: 100%;
+    width: 700px;
+}
+
+.flower {
+    height: 200px;
+    width: 275px;
+    padding-top: 15px;
+    padding-right: 20px;
+    image-orientation: from-image;
+    display: inline-block;
+}
+
+/*had trouble adding the text overlay on top of the picture..and the text wouldn't change to white with this code either../
+this was the css code I tried pairing up with what I mentioned in the index.html file:
+
+.text-block {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #cccccc; 
+    text-align: center;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+*/
+    
+ 
+
+  
+      
